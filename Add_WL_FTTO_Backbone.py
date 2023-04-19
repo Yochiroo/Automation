@@ -1,8 +1,8 @@
-# Selon les variables suivantes 
-VLAN = 3512
-WL = 036808
-SubnetIP = 10.255.12.72
-PublicIP = 185.146.78.120
-VrrpIP = SubnetIP + 4
+import ipaddress
+
+VLAN = '3512'
+WL = '036808'
+SubnetIP = ipaddress.ip_address('10.255.12.72') + 254
 print(SubnetIP)
-print(VrrpIP)
+
+# Q : au démarrage du script, p WL et SubnetIP
