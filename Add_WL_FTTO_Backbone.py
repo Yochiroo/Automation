@@ -1,9 +1,8 @@
-# variable definition
+# Selon les variables suivantes 
+
 VLAN = 3512
-WL = 036808 
-SubIP = 10.255.12.72
-CliIP = 10.255.12.73
-DCWAN1 = 10.255.12.74
-DCWAN2 = 10.255.12.75
-DCVRRP = 10.255.12.76
-PUBIP = 185.146.78.120
+WL = 036808
+SubnetIP = 10.255.12.72
+PublicIP = 185.146.78.120
+VrrpIP = SubnetIP + 4
+print(VrrpIP)
